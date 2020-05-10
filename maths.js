@@ -17,7 +17,7 @@ function checkAnswer(params) {
         if(score<=6)
         {
             console.log(`Correct score ${score}`);
-            backgroundImages.push(`url('images/background${score}.svg)`);
+            backgroundImages.push(`url('images/background${score}.svg')`);
             document.body.style.backgroundImage = backgroundImages;
         }
         else{
