@@ -36,7 +36,10 @@
   <div class='container'>
     <button id='checkAnswer' class='btn' value='Check'>Check Answer</button>
   </div>
-
+  <div class='container'>
+    <button id='clearCanvas' class='btn' value='Clear'>Clear</button>
+  </div>
+  
   <!-- TODO: Set up TF model and drawing logic-->
   <script>
     
@@ -48,6 +51,9 @@
       checkAnswer();
       clearCanvas();
       nextQuestion();
+    });
+    document.getElementById('clearCanvas').addEventListener('click', function () {
+      clearCanvas();
     });
   </script>
 </body>
